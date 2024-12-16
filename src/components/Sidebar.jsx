@@ -1,18 +1,35 @@
-// src/components/Sidebar.js
 import React from "react";
-import "../styles/Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar">
-      <h2>Your Library</h2>
+    <div className="w-64 bg-gray-900 h-screen p-4">
+      {/* Spotify Logo */}
+      <h1 className="text-white text-2xl font-bold mb-6">Spotify</h1>
+
+      {/* Navigation */}
       <ul>
-        <li>Playlists</li>
-        <li>Podcasts</li>
-        <li>Albums</li>
+        <li className="mb-4">
+          <a href="#" className="text-gray-400 hover:text-white">Home</a>
+        </li>
+        <li className="mb-4">
+          <a href="#" className="text-gray-400 hover:text-white">Search</a>
+        </li>
+        <li className="mb-4">
+          <a href="#" className="text-gray-400 hover:text-white">Your Library</a>
+        </li>
       </ul>
-      <input type="text" placeholder="Search" className="sidebar-search" />
-    </aside>
+
+      {/* Playlists */}
+      <h2 className="text-gray-400 mt-6 mb-4">Playlists</h2>
+      <ul>
+        <li className="mb-2">
+          <a href="#" className="text-gray-400 hover:text-white">Liked Songs</a>
+        </li>
+        <li className="mb-2">
+          <a href="#" className="text-gray-400 hover:text-white">Daily Mix 1</a>
+        </li>
+      </ul>
+    </div>
   );
 };
 

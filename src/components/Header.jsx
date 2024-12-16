@@ -1,21 +1,12 @@
-// src/components/Header.js
 import React from "react";
-import "../styles/Header.css";
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header-left">
-        <button className="nav-btn">←</button>
-        <button className="nav-btn">→</button>
-      </div>
-      <input type="text" className="search-bar" placeholder="What do you want to play?" />
-      <div className="header-right">
-        <button className="explore-btn">Explore Premium</button>
-        <button className="icon-btn">🔔</button>
-        <button className="icon-btn">👤</button>
-      </div>
-    </header>
+    <div className="bg-gray-800 p-4 flex items-center space-x-6">
+      <button className="text-white font-bold border-b-2 border-white">All</button>
+      <button className="text-gray-400 hover:text-white">Music</button>
+      <button className="text-gray-400 hover:text-white">Podcasts</button>
+    </div>
   );
 };
 
