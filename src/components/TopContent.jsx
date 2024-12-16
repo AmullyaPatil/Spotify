@@ -1,12 +1,12 @@
 import React from "react";
 
 const topItems = [
-  { title: "Liked Songs", image: "https://via.placeholder.com/60", active: true },
-  { title: "Charlie Putt", image: "https://via.placeholder.com/60" },
-  { title: "Night 🌃💤", image: "https://via.placeholder.com/60" },
-  { title: "Jungkook", image: "https://via.placeholder.com/60" },
-  { title: "Jimin", image: "https://via.placeholder.com/60" },
-  { title: "Your Episodes", image: "https://via.placeholder.com/60" },
+  { title: "Liked Songs", image: "https://via.placeholder.com/30x30", active: true },
+  { title: "Charlie Putt", image: "https://via.placeholder.com/30x30" },
+  { title: "Night 🌃💤", image: "https://via.placeholder.com/30x30" },
+  { title: "Jungkook", image: "https://via.placeholder.com/30x30" },
+  { title: "Jimin", image: "https://via.placeholder.com/30x30" },
+  { title: "Your Episodes", image: "https://via.placeholder.com/30x30" },
 ];
 
 const TopContent = () => {
@@ -16,15 +16,17 @@ const TopContent = () => {
         {topItems.map((item, index) => (
           <div
             key={index}
-            className="flex items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700"
+            className="flex bg-gray-800 rounded-lg hover:bg-gray-700"
           >
             <img
               src={item.image}
               alt={item.title}
-              className="h-12 w-12 rounded-lg mr-4"
+              className="w-19 h-full object-cover"
             />
-            <span className="text-white font-medium">{item.title}</span>
-          </div>
+           <div className="p-4 flex flex-col justify-center">
+              <span className="text-white font-medium">{item.title}</span>
+            </div>
+            </div>
         ))}
       </div>
     </div>
